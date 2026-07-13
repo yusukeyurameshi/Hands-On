@@ -12,16 +12,24 @@ Durante a execução, você conhecerá os principais componentes de infraestrutu
 
 Ao concluir este laboratório, você será capaz de:
 
-- criar um compartimento para organizar e isolar os recursos utilizados no laboratório;
-- configurar uma Virtual Cloud Network (VCN) para suportar a comunicação entre os componentes da solução;
-- compreender como o PostgreSQL atua como origem transacional e destino da camada Gold;
-- conectar o AIDP ao PostgreSQL por meio de JDBC;
-- ingerir tabelas da origem e armazená-las no formato Delta na camada Bronze;
-- utilizar PySpark para limpar, padronizar, relacionar e enriquecer os dados;
-- construir dimensões e fatos analíticos na camada Silver;
-- gerar indicadores e visões de negócio na camada Gold;
-- executar os notebooks na ordem correta e compreender as dependências entre as etapas do pipeline;
-- identificar onde os dados são persistidos em cada camada da arquitetura.
+1. Dia 1
+    - compreender como o PostgreSQL atua como origem transacional e destino da camada Gold;
+    - criar um compartimento para organizar e isolar os recursos utilizados no laboratório;
+    - configurar uma Virtual Cloud Network (VCN) para suportar a comunicação entre os componentes da solução;
+    - criar uma instância do PostgreSQL gerenciado;
+    - criar uma instância do AI Data Platform (AIDP);
+    - compreender a arquitetura do AIDP;
+    - criar um workspace no AIDP;
+    - criar um cluster compute no workspace criado.
+2. Dia 2
+    - conectar o AIDP ao PostgreSQL por meio de JDBC;
+    - ingerir tabelas da origem e armazená-las no formato Delta na camada Bronze;
+    - utilizar PySpark para limpar, padronizar, relacionar e enriquecer os dados;
+    - construir dimensões e fatos analíticos na camada Silver;
+    - gerar indicadores e visões de negócio na camada Gold;
+    - executar os notebooks na ordem correta e compreender as dependências entre as etapas do pipeline;
+    - criar jobs agendados de fluxo de trabalho;
+    - identificar onde os dados são persistidos em cada camada da arquitetura.
 
 ## Arquitetura
 
