@@ -29,7 +29,7 @@ Ao concluir este laboratório, você será capaz de:
 1. No menu lateral do seu workspace, clique em **Workflow**.
 2. Na aba **Jobs**, clique em **Create job**.
 
-    ![Página Workflow com o botão Create job](workflow1.png)
+    ![Página Workflow com o botão Create job](images/workflow1.png)
 
 3. Preencha os campos do painel **Create Job**:
 
@@ -40,7 +40,7 @@ Ao concluir este laboratório, você será capaz de:
 
 4. Clique em **Create**.
 
-    ![Formulário Create Job preenchido](workflow2.png)
+    ![Formulário Create Job preenchido](images/workflow2.png)
 
 > **Observação:** criar o job não o executa. Primeiro é necessário incluir e configurar as tarefas do workflow.
 
@@ -53,7 +53,7 @@ Ao concluir este laboratório, você será capaz de:
 5. Escolha o **Cluster** que executará o notebook.
 6. Se aplicável, configure **Execution timeout**, **Retries** e **Retry on timeout**.
 
-    ![Configuração de uma tarefa do tipo Notebook task](workflow3.png)
+    ![Configuração de uma tarefa do tipo Notebook task](images/workflow3.png)
 
 7. Repita o procedimento para as demais etapas do pipeline. No exemplo, as tarefas são:
 
@@ -70,7 +70,7 @@ As dependências impedem que uma etapa seja iniciada antes de sua predecessora t
 3. Em **Run if**, mantenha **All dependencies have executed and succeeded** para executar a tarefa apenas quando todas as dependências tiverem sucesso.
 4. Configure as outras dependências de acordo com o desenho do pipeline.
 
-    ![Dependência entre tarefas configurada no workflow](workflow4.png)
+    ![Dependência entre tarefas configurada no workflow](images/workflow4.png)
 
 > **Importante:** confirme a direção das setas no canvas. A ordem precisa refletir a sequência lógica do processamento. No exemplo, a transformação deve depender da ingestão, e a publicação deve depender da transformação.
 
@@ -81,7 +81,7 @@ As dependências impedem que uma etapa seja iniciada antes de sua predecessora t
 3. Em **Job parameters**, adicione parâmetros reutilizáveis que serão passados às tarefas, por exemplo ambiente, data de referência ou caminho de saída.
 4. Na seção **Compute**, confirme que o cluster exibido está ativo e pode executar as tarefas selecionadas.
 
-    ![Aba Details com opções de execução e parâmetros](workflow6.png)
+    ![Aba Details com opções de execução e parâmetros](images/workflow6.png)
 
 ## Tarefa 5: criar um agendamento
 
@@ -98,7 +98,7 @@ As dependências impedem que uma etapa seja iniciada antes de sua predecessora t
 3. Revise a frase de resumo mostrada abaixo dos campos: ela traduz a regra que será aplicada.
 4. Clique em **Create**.
 
-    ![Painel Create Schedule com frequência e horário](workflow7.png)
+    ![Painel Create Schedule com frequência e horário](images/workflow7.png)
 
 > **Dica:** para testar o pipeline antes de automatizá-lo, deixe o agendamento inativo ou crie-o para um horário futuro e use **Run now** para uma execução controlada.
 
@@ -110,7 +110,7 @@ As dependências impedem que uma etapa seja iniciada antes de sua predecessora t
 4. Verifique as colunas **Trigger**, **Duration**, **Start time**, **End time** e **Status**. O gatilho indica se a execução foi manual ou disparada pelo agendamento.
 5. Clique em **View** na execução desejada para inspecionar os detalhes e diagnosticar falhas ou tarefas ignoradas.
 
-    ![Histórico de execuções na aba Runs](workflow8.png)
+    ![Histórico de execuções na aba Runs](images/workflow8.png)
 
 ## Conclusão
 
