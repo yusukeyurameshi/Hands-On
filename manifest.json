@@ -31,8 +31,8 @@
 	  "filename": "create-workflow/workflow.md"
     },
     {
-      "title": "Data Sharing",
-      "filename": "data-sharing/data-sharing.md"
+      "title": "Armazenando e trabalhando com credenciais",
+      "filename": "credential-store/credential-store.md"
     }	
   ]
 }
