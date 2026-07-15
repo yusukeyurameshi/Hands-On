@@ -2,18 +2,20 @@
 
 ## Introdução
 
-Neste laboratório, você preparará o Oracle AI Data Platform Workbench para executar os notebooks de ingestão e transformação do fluxo de dados. Esta etapa conecta as configurações do PostgreSQL ao ambiente de processamento do AIDP e organiza os recursos necessários para gravar os dados nas camadas Bronze e Silver.
+Neste laboratório, você preparará o Oracle AI Data Platform Workbench para executar os notebooks de ingestão e transformação do fluxo de dados. Esta etapa conecta o OCI Database with PostgreSQL ao ambiente de processamento do AIDP, instala o driver JDBC necessário no cluster compute e organiza os recursos usados para persistir os dados nas camadas Bronze e Silver.
 
-Você configurará as variáveis de ambiente no cluster compute, criará o catálogo e os schemas utilizados pelo laboratório e fará o upload dos notebooks no workspace. Ao final, o ambiente estará pronto para executar manualmente os notebooks e validar a ingestão dos dados transacionais no lakehouse.
+Você configurará as variáveis de ambiente no cluster compute, criará o catálogo e os schemas utilizados pelo laboratório, fará o upload dos notebooks no workspace e executará manualmente o notebook de ingestão Bronze. Ao final, os dados transacionais do PostgreSQL estarão carregados na camada Bronze em formato Delta, prontos para as transformações seguintes.
 
 ### Objetivos
 
 - configurar as variáveis de ambiente usadas pelos notebooks;
+- instalar o driver JDBC do PostgreSQL no cluster compute;
 - iniciar o cluster compute que executará os workloads PySpark;
 - criar o catálogo do laboratório no Master catalog;
 - criar os schemas `bronze` e `silver`;
 - fazer upload dos notebooks no workspace do AIDP;
-- preparar o ambiente para execução manual dos notebooks de ingestão e transformação.
+- executar manualmente o notebook de ingestão Bronze;
+- validar a gravação inicial dos dados transacionais na camada Bronze.
 
 
 ## Tarefa 1: Configurar as variáveis de ambiente e subir o cluster
@@ -126,11 +128,19 @@ Antes de iniciar o upload, baixe os arquivos que serão utilizados nesta etapa:
 
     ![Notebooks enviados para o workspace](images/018.png)
 
+5. Abra o notebook de ingestão Bronze e selecione o cluster compute configurado anteriormente para executar as células.
+
+    ![Notebook de ingestão Bronze aberto](images/019.png)
+
+6. Execute as células do notebook e acompanhe a ingestão das tabelas PostgreSQL para a camada Bronze.
+
+    ![Execução da ingestão Bronze](images/020.png)
+
 ## Conclusão
 
-Nesta etapa, você configurou o ambiente de execução dos notebooks no Oracle AI Data Platform Workbench. O cluster compute recebeu as variáveis necessárias para acessar o PostgreSQL e gravar os dados nas camadas do laboratório.
+Nesta etapa, você configurou o ambiente de execução dos notebooks no Oracle AI Data Platform Workbench. O cluster compute recebeu as variáveis necessárias para acessar o PostgreSQL, instalou o driver JDBC e foi iniciado para executar os workloads PySpark do laboratório.
 
-Você também criou o catálogo e os schemas que serão usados pelas tabelas Delta, além de disponibilizar os notebooks no workspace. Com isso, o ambiente está pronto para executar a ingestão dos dados transacionais, persistir a camada Bronze e iniciar as transformações para a camada Silver.
+Você também criou o catálogo e os schemas que serão usados pelas tabelas Delta, disponibilizou os notebooks no workspace e executou a ingestão Bronze. Com isso, os dados transacionais foram carregados na camada Bronze e o ambiente está preparado para seguir com as transformações da camada Silver.
 
 ## Autoria
 
