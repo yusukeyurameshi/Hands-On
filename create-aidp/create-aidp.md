@@ -42,7 +42,7 @@ Obs.: O workspace criado junto com o AIDP serve somente para o funcionamento da 
 
     ![Credenciais do Oracle Autonomous AI Lakehouse](images/005.png)
 
-6. Revise e adidione as políticas de acesso que serão criadas ou associadas ao Workbench.
+6. Revise e adicione as políticas de acesso que serão criadas ou associadas ao Workbench.
 
     ![Políticas de acesso do Workbench](images/006.png)
 

@@ -6,7 +6,7 @@
 
 Uma VCN é uma rede definida por software que você configura nos data centers do Oracle Cloud Infrastructure em determinada região. Uma sub-rede é uma subdivisão de uma VCN. Para obter uma visão geral de VCNs, tamanho permitido, componentes padrão da VCN e cenários para uso de uma VCN, consulte [Visão Geral do Serviço Networking.](https://docs.oracle.com/pt-br/iaas/Content/Network/Concepts/overview.htm#network_landing)
 
-Neste Lab você vai aprender a provisiona uma Virtual Cloud Network (VCN) com acesso a internet.
+Neste Lab você vai aprender a provisionar uma Virtual Cloud Network (VCN) com acesso a internet.
 
 *Tempo estimado para o Lab:* 15 Minutos
 

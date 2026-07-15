@@ -77,15 +77,13 @@ Siga a sequência abaixo para instalar e configurar as ferramentas necessárias 
     ![Instalação de pacotes na VM Linux](images/012.png)
 
     ```
-    sudo dnf -y install git make go
-    git clone https://github.com/pgEdge/pgedge-loadgen.git
-    cd pgedge-loadgen/
-    make build
+    sudo rpm -i https://ftp.postgresql.org/pub/pgadmin/pgadmin4/yum/pgadmin4-redhat-repo-2-1.noarch.rpm
+    sudo dnf install -y pgadmin4-web
     ```
 
-2. Execute os comandos de instalação e configuração do `pgedge-loadgen`.
+2. Execute os comandos de instalação e configuração do `PGAdmin`.
 
-    ![Configuração do pgedge-loadgen](images/013.png)
+    ![Configuração do PGAdmin](images/013.png)
 
     ```
     sudo /usr/pgadmin4/bin/setup-web.sh
@@ -160,7 +158,7 @@ Siga a sequência abaixo para instalar o `pgedge-loadgen` e gerar os dados fict�
     pgedge-loadgen init \
         --app wholesale \
         --size 1GB \
-        --connection "postgres://admin:Senha@primary.c.postgresql.us-phoenix-1.oci.oraclecloud.com:5432/handson"
+        --connection "postgres://admin:Senha@ENDPOINT_DO_SEU_POSTGRESQL.oci.oraclecloud.com:5432/handson"
     ```
 
 4. Execute o script para carregar os dados fictícios e acompanhe a conclusão do processo.

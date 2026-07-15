@@ -65,8 +65,8 @@ Ao concluir este laboratório, você será capaz de:
 
 As dependências impedem que uma etapa seja iniciada antes de sua predecessora terminar nas condições definidas.
 
-1. Selecione a tarefa que deve executar depois de outra, por exemplo `bronze_ingestao_postgresql_delta`.
-2. No campo **Depends on**, escolha a tarefa predecessora — no exemplo, `silver_transformacoes_delta`.
+1. Selecione a tarefa que deve executar depois de outra, por exemplo `silver_transformacoes_delta`.
+2. No campo **Depends on**, escolha a tarefa predecessora — no exemplo, `bronze_ingestao_postgresql_delta`.
 3. Em **Run if**, mantenha **All dependencies have executed and succeeded** para executar a tarefa apenas quando todas as dependências tiverem sucesso.
 4. Configure as outras dependências de acordo com o desenho do pipeline.
 
