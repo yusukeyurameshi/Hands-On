@@ -88,6 +88,13 @@ Você configurará as variáveis de ambiente no cluster compute, criará o catá
 
 ## Tarefa 3: Fazer upload dos notebooks e executar manualmente
 
+Antes de iniciar o upload, baixe os arquivos que serão utilizados nesta etapa:
+
+- [01_bronze_ingestao_postgresql_delta.ipynb](assets/01_bronze_ingestao_postgresql_delta.ipynb)
+- [02_silver_transformacoes_delta.ipynb](assets/02_silver_transformacoes_delta.ipynb)
+- [03_gold_publicacao_postgresql.ipynb](assets/03_gold_publicacao_postgresql.ipynb)
+- [postgresql-42.7.4.jar](assets/postgresql-42.7.4.jar)
+
 1. No menu lateral, acesse **Workspaces** e selecione o workspace do laboratório.
 
     ![Workspace do laboratório](images/012.png)
