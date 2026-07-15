@@ -25,23 +25,24 @@ Siga a sequência abaixo para criar o **Oracle AI Data Platform Workbench** pela
 
     ![Menu do AI Data Platform Workbench](images/001.png)
 
-2. Na lista de Workbenches, selecione o compartimento correto e clique em **Create AI Data Platform Workbench**.
+2. Selecione o compartimento correto e clique em **Create AI Data Platform Workbench**.
 
     ![Lista de AI Data Platform Workbenches](images/002.png)
 
 3. Informe o nome e a descrição do Workbench. Na mesma tela, defina também o nome e a descrição do workspace inicial.
+Obs.: O workspace criado junto com o AIDP serve somente para o funcionamento da ferramenta e não é uma boa prática utilizá-lo para os pipelines reais.
 
     ![Configuração geral do Workbench e workspace](images/003.png)
 
-4. Configure a integração com o Oracle Autonomous AI Lakehouse como "None" e a opção de criptografia do armazenamento.
+4. Configure a integração com o Oracle Autonomous AI Lakehouse como "None" para este LAB.
 
     ![Configuração do Oracle Autonomous AI Lakehouse e criptografia](images/004.png)
 
-5. Caso queria trabalhar com agentes de IA selecione "Create New"e informe as credenciais necessárias para a configuração do Oracle Autonomous AI Lakehouse.
+5. Para trabalhar com agentes de IA selecione "Create New" e informe as credenciais necessárias para a configuração do Oracle Autonomous AI Lakehouse.
 
     ![Credenciais do Oracle Autonomous AI Lakehouse](images/005.png)
 
-6. Revise as políticas de acesso que serão criadas ou associadas ao Workbench.
+6. Revise e adidione as políticas de acesso que serão criadas ou associadas ao Workbench.
 
     ![Políticas de acesso do Workbench](images/006.png)
 
@@ -49,7 +50,7 @@ Siga a sequência abaixo para criar o **Oracle AI Data Platform Workbench** pela
 
     ![Workbench criado na lista de recursos](images/007.png)
 
-8. O workspace inicial é informado durante a criação do Workbench. Depois que o Workbench estiver disponível, acesse o menu de ações e selecione **View Details** para revisar os detalhes do ambiente criado.
+8. Acesse o menu de ações e selecione **View Details** para revisar os detalhes do ambiente que está sendo criado.
 
 ![Acesso aos detalhes do Workbench](images/008.png)
 

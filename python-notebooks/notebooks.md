@@ -105,10 +105,10 @@ Use Markdown para incluir:
 Exemplo de conteúdo para uma célula Markdown:
 
 ```markdown
-## Validação da ingestão
+    ## Validação da ingestão
 
-Esta etapa verifica a quantidade de registros carregados na camada Bronze.
-Execute a célula SQL abaixo após concluir a ingestão.
+    Esta etapa verifica a quantidade de registros carregados na camada Bronze.
+    Execute a célula SQL abaixo após concluir a ingestão.
 ```
 
 As células Markdown não exigem cluster nem são executadas como código. Elas transformam o notebook em um documento técnico reproduzível, combinando contexto, instruções, comandos e resultados em um único lugar.

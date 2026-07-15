@@ -30,12 +30,16 @@
       "title": "[Dia 2] - Trabalhando com Python Notebooks",
       "filename": "python-notebooks/notebooks.md"
     },
-	{
-      "title": "[Dia 2] - Agendando tarefas",
-	  "filename": "create-workflow/workflow.md"
+    {
+      "title": "[Dia 2] - Configurando a Ingestão",
+      "filename": "python-notebooks/notebooks.md"
+    },
+  	{
+      "title": "[Dia 2] - Agendando Tarefas",
+      "filename": "create-workflow/workflow.md"
     },
     {
-      "title": "[Dia 2] - Armazenando e trabalhando com credenciais",
+      "title": "[Dia 2] - Armazenando e Trabalhando com Credenciais",
       "filename": "credential-store/credential-store.md"
     }	
   ]
