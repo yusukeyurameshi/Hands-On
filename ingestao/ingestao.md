@@ -18,6 +18,10 @@ Você configurará as variáveis de ambiente no cluster compute, criará o catá
 
 ## Tarefa 1: Configurar as variáveis de ambiente e subir o cluster
 
+Antes de iniciar, baixe os arquivos que serão utilizados nesta etapa:
+
+- [postgresql-42.7.4.jar](assets/postgresql-42.7.4.jar)
+
 1. No workspace do AIDP, acesse **Compute** para visualizar o cluster que será utilizado pelos notebooks.
 
     ![Tela de Compute do workspace](images/001.png)
@@ -52,39 +56,51 @@ Você configurará as variáveis de ambiente no cluster compute, criará o catá
     PG_PASSWORD = SENHA_DO_SEU_POSTGRESQL
     ```
 
-5. Após salvar as configurações, abra novamente o menu de ações do cluster e selecione a opção para iniciar o compute.
+4. Acesse a aba **Library** do cluster para instalar o driver JDBC do PostgreSQL.
 
-    ![Opção para iniciar o cluster](images/004.png)
+    ![Aba Library do cluster](images/004.png)
 
-6. Aguarde até que o cluster entre em estado de inicialização ou execução antes de iniciar os notebooks.
+5. Faça upload do arquivo `postgresql-42.7.4.jar` baixado anteriormente.
 
-    ![Cluster em inicialização](images/005.png)
+    ![Upload do driver JDBC PostgreSQL](images/005.png)
+
+6. Confirme que a biblioteca foi adicionada ao cluster.
+
+    ![Driver JDBC PostgreSQL instalado](images/006.png)
+
+7. Abra novamente o menu de ações do cluster e selecione a opção para iniciar o compute.
+
+    ![Opção para iniciar o cluster](images/007.png)
+
+8. Aguarde até que o cluster entre em estado de inicialização ou execução antes de iniciar os notebooks.
+
+    ![Cluster em inicialização](images/008.png)
 
 ## Tarefa 2: Criar o catálogo e schemas
 
 1. No menu lateral do Workbench, acesse **Master catalog**.
 
-    ![Tela do Master catalog](images/006.png)
+    ![Tela do Master catalog](images/009.png)
 
 2. Clique em **Create catalog** e informe os dados do catálogo que será utilizado no laboratório.
 
-    ![Criação do catálogo](images/007.png)
+    ![Criação do catálogo](images/010.png)
 
 3. Confirme que o catálogo foi criado com sucesso.
 
-    ![Catálogo criado com sucesso](images/008.png)
+    ![Catálogo criado com sucesso](images/011.png)
 
 4. Acesse o catálogo criado e visualize a lista de schemas.
 
-    ![Detalhes do catálogo criado](images/009.png)
+    ![Detalhes do catálogo criado](images/012.png)
 
 5. Clique em **Create schema** e crie os schemas necessários para as camadas do laboratório.
 
-    ![Criação de schema](images/010.png)
+    ![Criação de schema](images/013.png)
 
 6. Confirme que os schemas `bronze` e `silver` foram criados e estão ativos.
 
-    ![Schemas criados no catálogo](images/011.png)
+    ![Schemas criados no catálogo](images/014.png)
 
 ## Tarefa 3: Fazer upload dos notebooks e executar manualmente
 
@@ -93,23 +109,22 @@ Antes de iniciar o upload, baixe os arquivos que serão utilizados nesta etapa:
 - [01_bronze_ingestao_postgresql_delta.ipynb](assets/01_bronze_ingestao_postgresql_delta.ipynb)
 - [02_silver_transformacoes_delta.ipynb](assets/02_silver_transformacoes_delta.ipynb)
 - [03_gold_publicacao_postgresql.ipynb](assets/03_gold_publicacao_postgresql.ipynb)
-- [postgresql-42.7.4.jar](assets/postgresql-42.7.4.jar)
 
 1. No menu lateral, acesse **Workspaces** e selecione o workspace do laboratório.
 
-    ![Workspace do laboratório](images/012.png)
+    ![Workspace do laboratório](images/015.png)
 
 2. No conteúdo do workspace, clique em **Upload** para enviar os notebooks.
 
-    ![Upload de arquivos no workspace](images/013.png)
+    ![Upload de arquivos no workspace](images/016.png)
 
 3. Selecione os notebooks de ingestão e transformação que serão utilizados no laboratório.
 
-    ![Seleção dos notebooks para upload](images/014.png)
+    ![Seleção dos notebooks para upload](images/017.png)
 
 4. Confirme que os notebooks foram enviados e aparecem na lista de conteúdo do workspace.
 
-    ![Notebooks enviados para o workspace](images/015.png)
+    ![Notebooks enviados para o workspace](images/018.png)
 
 ## Conclusão
 
