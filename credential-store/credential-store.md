@@ -117,7 +117,7 @@ kafka_options = {
 }
 ```
 
-    ![Notebook recuperando credenciais com aidputils e exibindo valores redacted](images/credential-store6.png)
+![Notebook recuperando credenciais com aidputils e exibindo valores redacted](images/credential-store6.png)
 
 O valor retornado pode ser fornecido a uma conexão, como a configuração de autenticação do Kafka. Entretanto, ele é tratado como sensível: se você tentar imprimi-lo, a saída será exibida como **`[REDACTED]`**, como na imagem. Isso impede que o segredo apareça no resultado do notebook, nos logs visíveis ou em capturas de tela.
 
