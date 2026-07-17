@@ -30,7 +30,7 @@ Ao concluir este laboratório, você será capaz de:
 2. Observe a árvore de diretórios à esquerda e a lista de conteúdos no painel principal.
 3. Use pastas para separar os artefatos por assunto, equipe, ambiente ou etapa do pipeline — por exemplo, `dados`, `notebooks`, `scripts`, `jobs` e `configuracoes`.
 
-    ![Workspace exibindo pastas, arquivos e notebooks](images/python-notebook1.png)
+   ![Workspace exibindo pastas, arquivos e notebooks](images/python-notebook1.png)
 
 No exemplo, o workspace contém diferentes tipos de itens, como **Folder**, **File**, **Notebook** e **Git folder**. Essa estrutura permite manter o projeto navegável mesmo quando ele inclui muitos arquivos e notebooks além de permitir configurações de acesso.
 
@@ -41,7 +41,7 @@ No exemplo, o workspace contém diferentes tipos de itens, como **Folder**, **Fi
 3. Para criar uma pasta, escolha **Folder** e informe um nome que deixe clara a finalidade do diretório.
 4. Para criar um arquivo, escolha **File** e selecione o formato apropriado.
 
-    ![Menu Create com opções de pasta, notebook e tipos de arquivo](images/python-notebook2.png)
+   ![Menu Create com opções de pasta, notebook e tipos de arquivo](images/python-notebook2.png)
 
 O AIDP aceita arquivos de diferentes naturezas, incluindo:
 
@@ -63,7 +63,7 @@ Também é possível criar **Notebook**, **Job**, **Bundle (Preview)** e **Git f
 
 O notebook é criado com **Python** como linguagem padrão, indicada pela etiqueta **Language: Python**. Portanto, uma célula comum de código interpreta os comandos como Python.
 
-    ![Notebook com cluster ativo e linguagem Python](images/python-notebook3.png)
+   ![Notebook com cluster ativo e linguagem Python](images/python-notebook3.png)
 
 5. Em uma célula de código, escreva um comando Python simples, como:
 
